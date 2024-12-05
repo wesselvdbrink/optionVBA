@@ -12,7 +12,7 @@
 
     <style>
         .container {
-          width: 77%;
+          width: 85%;
           margin: auto;
           text-align: left;
         }
@@ -27,15 +27,17 @@
             <p>
                 OptionVBA allows for quick analyses on complex option strategies. Users can simulate pay-offs, 
                 compute and visualize the greeks and time-decay of quoted vanilla options. Furthermore, users can quickly
-                analyse pay-offs and Greeks for long and short positions in European and American style <i>call spreads, put spreads, butterfly spreads, 
-                condors, strangles, and straddles.</i>  Specific legs are found based on user-preferred Deltas. 
+                analyse pay-offs and Greeks for long and short positions in European and American style call -, put -, and butterfly spreads, 
+                condors, strangles, and straddles. Specific legs are found based on user-preferred deltas. Functionality exists to model DdeltaDtime 
+                and DgammaDtime directly by setting the result parameter in the BinTree function to 6 or 7 respectively. The code is available in the 
+                module BinomialTreeFunctions. Other higher order Greeks can be estimated using this function indirectly.
             </p>
             <h2>Standard</h2>
             <p>
                 Standard functionalities include automatic cleaning of your copy-pasted options quotes from DeGiro, and calculating implied volatilities and Greeks for both 
                 American and European style put and call contracts. Manually specifying contract parameters is also possible. Implied volatilities are found using the 
                 bisection method. European style contracts are analysed using the Black and Scholes formulae. American style contracts are analysed using 
-                a binomial tree algorithm. Users can simulate pay-offs of open option strategies that have up to five vanilla legs consisting of puts, calls, and stock.
+                a binomial tree algorithm.
             </p>
 
             <h2>Download</h2>
@@ -49,10 +51,10 @@
 
             <h2>Contact</h2>
             <p>
-                Feel free to contact me if you have questions, suggestions, or experience errors. Feedback is much appreciated! <br>
+                Feel free to contact me if you have questions, suggestions, or experience errors.<br>
                 E-mail: <E-mail>optionvba@gmail.com</E-mail> <br>
             </p>
-
+</p>
             <h2>Impression</h2>
             <p>
                 <img src="TimeSpreadImpression.png"width="1280" height="625" alt="Example of a time spread or calendar spread using call options"> <br>
